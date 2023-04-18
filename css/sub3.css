@@ -1,0 +1,630 @@
+@charset "utf-8";
+
+/*애니메이션*/
+
+@keyframes up_down {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes tossing1 {
+    0% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+
+@-webkit-keyframes tossing1 {
+    0% {
+        -webkit-transform: rotate(-4deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(3deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-3deg);
+    }
+}
+
+@keyframes tossing2 {
+    0% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+@-webkit-keyframes tossing2 {
+    0% {
+        -webkit-transform: rotate(3deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(-3deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(3deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+
+        opacity: 0.7;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0.7;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+
+        opacity: 0.7;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0.7;
+    }
+}
+
+/*font*/
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    min-width: 1450px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #4f4051;
+}
+
+/*커서*/
+/*html {
+    cursor: url(../images/cursor1.gif), auto;
+}*/
+
+a {
+    cursor: url(../images/cursor2.gif), auto;
+}
+
+/*header*/
+
+#header {
+    background: url(../images/header_bg.png)no-repeat top center;
+    width: 100%;
+    height: 161px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+
+}
+
+.gnb {
+    width: 1320px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.gnb>li {
+    font-family: 'ganpan';
+    font-size: 24px;
+    font-weight: bold;
+    color: #ab98c8;
+    letter-spacing: 2px;
+    padding-top: 55px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.gnb>li>a {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sub_menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: all 0.4s;
+    transform-origin: top;
+    background-color: rgba(226, 170, 205, 0.6);
+}
+
+
+.sub_menu>li {
+    font-size: 20px;
+    width: 100%;
+    font-weight: normal;
+    color: #fff;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+}
+
+.sub_menu>li>a {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.gnb>li:hover {
+    color: #e2aacd;
+}
+
+.gnb>li:hover>.sub_menu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.sub_menu>li:hover {
+    background-color: #fff;
+    color: rgba(226, 170, 205);
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 52px;
+    right: 10px;
+    display: flex;
+}
+
+.icon li {
+    padding-left: 20px;
+}
+
+.search {
+    background: #e2aacd url(../images/search.png) no-repeat 15px center;
+    color: palegoldenrod;
+    padding: 5px 10px;
+    padding-left: 50px;
+    width: 170px;
+    height: 30px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.search::placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+#header.on {
+    background: none;
+}
+
+#header .on2>li>a {
+    color: #fff;
+    text-shadow: 1px 1px 2px #a199a1b4;
+}
+
+
+/*wrap1*/
+#wrap1 {
+    background: url(../images/sub3/bg.jpg) no-repeat center top;
+    width: 100%;
+    height: 2360px;
+}
+
+.hang {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    top: -160px;
+}
+
+.mobiles {
+    padding-top: 161px;
+}
+
+.mobile {
+    position: absolute;
+    transition: all .3s;
+
+}
+
+.mobile:hover {
+    cursor: url(../images/cursor2.gif), auto;
+    scale: 1.1;
+}
+
+.hang1 {
+    top: 560px;
+    left: 20px;
+    animation-name: tossing1;
+    -webkit-animation-name: tossing1;
+
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hang2 {
+    top: 420px;
+    left: 170px;
+    animation-name: tossing2;
+    -webkit-animation-name: tossing2;
+
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hang3 {
+    top: 510px;
+    left: 380px;
+    animation-name: tossing1;
+    -webkit-animation-name: tossing1;
+
+    animation-duration: 2.2s;
+    -webkit-animation-duration: 2.2s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hang4 {
+    top: 370px;
+    left: 540px;
+    animation-name: tossing2;
+    -webkit-animation-name: tossing2;
+
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hang5 {
+    top: 470px;
+    right: 320px;
+    animation-name: tossing1;
+    -webkit-animation-name: tossing1;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hang6 {
+    top: 600px;
+    right: 100px;
+    animation-name: tossing2;
+    -webkit-animation-name: tossing2;
+
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.hang7 {
+    top: 510px;
+    right: 0;
+    animation-name: tossing1;
+    -webkit-animation-name: tossing1;
+
+    animation-duration: 1.3s;
+    -webkit-animation-duration: 1.3s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.invite {
+    width: 1320px;
+    margin: 700px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+
+    background: url(../images/sub3/post.png)no-repeat center top;
+    width: 538px;
+    height: 497px;
+    text-align: center;
+    padding-top: 210px;
+}
+
+.post li {
+    padding: 10px 0;
+}
+
+.post li a {
+    display: inline-block;
+    width: 220px;
+    padding: 15px 0;
+    background-color: #fbeaf3;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px #c4a7bd;
+    font-family: "ganpan";
+    font-size: 20px;
+    color: #fff;
+    text-shadow: -1px 0 #d9c7e3, 0 1px #d9c7e3, 1px 0 #d9c7e3, 0 -1px #d9c7e3;
+}
+
+.post li a:hover {
+    color: #d9c7e3;
+    text-shadow: none;
+}
+
+.letter {
+    background: url(../images/sub3/letter.png)no-repeat center top;
+    width: 816px;
+    height: 787px;
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    top: -70px;
+    left: 80px;
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+
+    animation-duration: .8s;
+    -webkit-animation-duration: .8s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.yes_btn {
+    display: inline-block;
+    background-color: #fff4bd;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-family: 'KOTRAHOPE';
+    font-size: 24px;
+    color: #d9c7e3;
+    margin-top: 635px;
+    margin-left: 560px;
+    transition: all 0.3s;
+    animation: up_down 1s linear infinite alternate;
+
+}
+
+.yes_btn:hover {
+    animation: none;
+    transform: scale(1.1);
+}
+
+/*wrap2*/
+#wrap2 {
+    background-color: #fff;
+
+}
+
+.store {
+    width: 1320px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.txt_box {
+    background: url(../images/sub3/sign.png)no-repeat right 100px;
+    width: 510px;
+    height: 340px;
+    border: solid 10px #ecddff;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.txt_box p {
+    font-size: 20px;
+    color: #9f90c5;
+    padding: 30px;
+}
+
+span {
+    color: #776a79;
+    font-weight: 700;
+}
+
+/*pop_store*/
+
+#pop {
+    background-color: #fff;
+}
+
+.pop_store {
+    width: 1320px;
+    margin: 200px auto;
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+.popup {
+    margin-top: 50px;
+    background: url(../images/sub3/popstore.png)no-repeat center top;
+    width: 1009px;
+    height: 814px;
+    padding-left: 380px;
+}
+
+.popup a {
+
+    display: inline-block;
+    margin-left: 30px;
+    font-family: 'KOTRAHOPE';
+    font-size: 24px;
+    color: #9f90c5;
+    background-color: #fff;
+    padding: 10px 40px;
+    margin-top: 570px;
+    border-radius: 25px 25px 25px 0;
+    box-shadow: 4px 4px 2px #c8bed4;
+}
+
+.map {
+    background: url(../images/sub3/map_icon.png)no-repeat 16px 8px;
+
+}
+
+#pop .book {
+    background: #fff url(../images/sub3/booking_icon.png)no-repeat 12px 8px;
+    padding-left: 50px;
+    padding-right: 30px;
+
+}
+
+/*footer*/
+.footer_position {
+    position: relative;
+}
+
+#footer {
+    background: url(../images/footer_bg.png);
+    position: absolute;
+    top: -300px;
+    left: 0;
+    width: 100%;
+    height: 405px;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 100px auto;
+}
+
+.fi_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sns_icon {
+    display: flex;
+}
+
+.sns_icon>li {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.fi_2 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: #ab98c8;
+    font-size: 14px;
+}
+
+.fi_2>ul {
+    display: flex;
+}
+
+.fi_2>ul>li {
+    padding-left: 20px;
+}
+
+.top_btn {
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+}

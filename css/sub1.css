@@ -1,0 +1,1147 @@
+@charset "utf-8";
+
+/*애니메이션*/
+@keyframes stack100 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes stack70 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes stack85 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes stack77 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 77%;
+    }
+}
+
+@keyframes stack75 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes stack44 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 44%;
+    }
+}
+
+
+@keyframes rotate {
+
+    0% {
+
+        transform: rotate(0deg)translateY(-5px);
+    }
+
+    35% {
+        transform: rotate(-10deg)translateY(10px);
+    }
+
+    70% {
+        transform: rotate(0deg)translateY(5px);
+    }
+
+    100% {
+        transform: rotate(10deg)translateY(15px);
+    }
+
+}
+
+@keyframes updown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes updown2 {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeout1 {
+
+
+    from {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        opacity: 0;
+        top: 1000px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+@keyframes fadeout2 {
+
+
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        top: 500px;
+        left: 530px;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        top: 500px;
+        left: -1000px;
+
+    }
+}
+
+@keyframes fadeout3 {
+
+
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        top: 550px;
+        left: 800px;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        top: 550px;
+        left: 2000px;
+
+    }
+}
+
+@keyframes fadeout4 {
+
+
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        top: 400px;
+        left: 50%;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        top: -500px;
+        left: 50%;
+
+    }
+}
+
+@keyframes tossing {
+    0% {
+        transform: rotate(-3deg);
+        top: 320px;
+        left: 580px;
+    }
+
+    50% {
+        transform: rotate(3deg);
+        top: 320px;
+        left: 580px;
+    }
+
+    100% {
+        transform: rotate(-3deg);
+        top: 320px;
+        left: 580px;
+    }
+}
+
+@-webkit-keyframes tossing {
+    0% {
+        -webkit-transform: rotate(-3deg);
+        top: 320px;
+        left: 580px;
+    }
+
+    50% {
+        -webkit-transform: rotate(3deg);
+        top: 320px;
+        left: 580px;
+    }
+
+    100% {
+        -webkit-transform: rotate(-3deg);
+        top: 320px;
+        left: 580px;
+    }
+}
+
+@keyframes tossing2 {
+    0% {
+        opacity: 0.7;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+@-webkit-keyframes tossing2 {
+    0% {
+        opacity: 0.7;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+/*font*/
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    min-width: 1450px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #4f4051;
+}
+
+/*커서*/
+/*html {
+    cursor: url(../images/cursor1.gif), auto;
+}*/
+
+a {
+    cursor: url(../images/cursor2.gif), auto;
+}
+
+/*header*/
+
+#header {
+    background: url(../images/header_bg.png)no-repeat top center;
+    width: 100%;
+    height: 161px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+
+}
+
+.gnb {
+    width: 1320px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.gnb>li {
+    font-family: 'ganpan';
+    font-size: 24px;
+    font-weight: bold;
+    color: #ab98c8;
+    letter-spacing: 2px;
+    padding-top: 55px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.gnb>li>a {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sub_menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: all 0.4s;
+    transform-origin: top;
+    background-color: rgba(226, 170, 205, 0.6);
+}
+
+
+.sub_menu>li {
+    font-size: 20px;
+    width: 100%;
+    font-weight: normal;
+    color: #fff;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+}
+
+.sub_menu>li>a {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.gnb>li:hover {
+    color: #e2aacd;
+}
+
+.gnb>li:hover>.sub_menu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.sub_menu>li:hover {
+    background-color: #fff;
+    color: rgba(226, 170, 205);
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 52px;
+    right: 10px;
+    display: flex;
+}
+
+.icon li {
+    padding-left: 20px;
+}
+
+.search {
+    background: #e2aacd url(../images/search.png) no-repeat 15px center;
+    color: palegoldenrod;
+    padding: 5px 10px;
+    padding-left: 50px;
+    width: 170px;
+    height: 30px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.search::placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+#header.on {
+    background: none;
+}
+
+#header .on2>li>a {
+    color: #fff;
+    text-shadow: 2px 2px 2px #a199a1b4;
+}
+
+/*wrap1*/
+#wrap1 {
+    background-color: #f0ebff;
+}
+
+.brand {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand_info {
+    padding-top: 150px;
+    background: url(../images/sub1/brand_txt_bg.png) no-repeat center 150px;
+    width: 993px;
+    height: 779px;
+    margin-left: 180px;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.brand_info p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 350px;
+}
+
+.po {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cl {
+    top: 500px;
+    left: 530px;
+    animation: fadeout2 4s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+.cr {
+    top: 550px;
+    left: 800px;
+    animation: fadeout3 4s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+.ct {
+    top: 400px;
+    animation: fadeout4 4s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+.simbol {
+    animation: fadeout1 4s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+.door {
+    top: 520px;
+}
+
+.click {
+
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.click_btn {
+    top: 350px;
+    left: 700px;
+    display: none;
+
+}
+
+.all_ch {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.all_ch img {
+    display: inline-block;
+    padding-top: 100px;
+    transition: all 0.4s;
+    animation: updown 2s linear infinite alternate;
+}
+
+.all_ch img:hover {
+    cursor: url(../images/cursor2.gif), auto;
+    animation: none;
+    transform: translateY(-50px);
+    scale: 1.1;
+}
+
+/*wrap2*/
+
+#wrap2 {
+    background: url(../images/sub1/character_bg.png) no-repeat center top;
+    width: 100%;
+    height: 4091px;
+    position: relative;
+    top: -150px;
+}
+
+.ch_info {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/*그래프*/
+
+.graph {
+    width: 300px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 40px;
+}
+
+.graph span {
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.gf1 {
+    width: 130px;
+    height: 40px;
+    margin: 20px 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-family: 'KOTRAHOPE';
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+/*ch1*/
+.g_ani1 {
+    animation: stack100 2s 1;
+    background: #cdbeef;
+}
+
+.g_ani2 {
+    animation: stack70 2s 1;
+    background: #cdbeef;
+}
+
+.g_ani3 {
+    animation: stack85 2s 1;
+    background: #cdbeef;
+}
+
+.day_graph {
+    display: flex;
+    position: absolute;
+    top: 800px;
+    left: 0;
+}
+
+
+.day_con li {
+    background: url(../images/sub1/day_star.png)no-repeat left top;
+}
+
+#ch1,
+#ch2,
+#ch3,
+#ch4 {
+    padding-top: 380px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.daybear {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    animation: rotate 2.7s linear infinite alternate;
+    z-index: 10;
+}
+
+.daybear,
+.daybunny,
+.nightbear,
+.sweeties:hover {
+    cursor: url(../images/cursor2.gif), auto;
+}
+
+
+.day1,
+.day2,
+.day3 {
+    position: absolute;
+
+
+}
+
+.day1 {
+    width: 321px;
+    height: 317px;
+    top: 450px;
+    left: 550px;
+    background: url(../images/sub1/daybear_bg.png)no-repeat center top;
+    text-align: center;
+    z-index: 10;
+    animation: updown2 1.7s linear infinite alternate;
+}
+
+.day1 p {
+    padding-top: 100px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'KOTRA HOPE';
+    letter-spacing: 1px;
+    color: #948296;
+}
+
+.star {
+    position: absolute;
+    animation-name: tossing2;
+    -webkit-animation-name: tossing2;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.d_d {
+    top: -70px;
+    left: 0;
+
+}
+
+.day2 {
+    top: 360px;
+    right: 0;
+    width: 424px;
+    height: 418px;
+    background: url(../images/sub1/day_about_bg.png)no-repeat center top;
+    z-index: 10;
+    animation: updown 1s linear infinite alternate;
+    animation-delay: 0.3s;
+}
+
+.d_a {
+    top: -70px;
+    right: 50px;
+}
+
+.day3 {
+    width: 385px;
+    height: 380px;
+    background: url(../images/sub1/day_tmi_bg.png) no-repeat center top;
+    top: 800px;
+    right: 300px;
+    text-align: center;
+    padding-top: 70px;
+    color: #948296;
+    z-index: 10;
+    animation: updown2 1.3s linear infinite alternate;
+}
+
+.day3 p:nth-child(1) {
+    font-family: 'KOTRA HOPE';
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-left: -10px;
+    padding-bottom: 15px;
+}
+
+.tm1 {
+    transition: all 0.3s;
+}
+
+.tm2 {
+    transition: all 0.3s;
+}
+
+.tm3 {
+    transition: all 0.3s;
+}
+
+.tm1:hover {
+    transform: scale(1.1) rotate(3deg);
+    cursor: url(../images/cursor2.gif), auto;
+}
+
+.tm2:hover {
+    transform: scale(1.1) rotate(-3deg);
+    cursor: url(../images/cursor2.gif), auto;
+}
+
+.tm3:hover {
+    transform: scale(1.1) rotate(3deg);
+    cursor: url(../images/cursor2.gif), auto;
+}
+
+.d_t {
+    top: 100px;
+    left: -80px;
+}
+
+/*ch2*/
+
+.g_ani4 {
+    animation: stack100 2s 1;
+    background: #ffcff0;
+}
+
+.g_ani5 {
+    animation: stack77 2s 1;
+    background: #ffcff0;
+}
+
+.g_ani6 {
+    animation: stack100 2s 1;
+    background: #ffcff0;
+}
+
+.bunny_graph {
+    display: flex;
+    position: absolute;
+    top: 1350px;
+    right: 100px;
+}
+
+.bunny_con li {
+    background: url(../images/sub1/bunny_star.png)no-repeat left top;
+    color: #c68fb7;
+}
+
+.daybunny {
+    position: absolute;
+    top: 920px;
+    right: 150px;
+    animation: rotate 2.7s linear infinite alternate;
+}
+
+.bunny1,
+.bunny2,
+.bunny3 {
+    position: relative;
+    position: absolute;
+
+}
+
+.bunny1 {
+    width: 342px;
+    height: 337px;
+    top: 800px;
+    left: 0;
+    background: url(../images/sub1/daybunny_bg.png)no-repeat center top;
+    text-align: center;
+    animation: updown2 1.7s linear infinite alternate;
+}
+
+.bunny1 p {
+    padding-top: 100px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'KOTRA HOPE';
+    letter-spacing: 1px;
+    color: #c68fb7;
+}
+
+.b_b {
+    top: -50px;
+    right: 0;
+}
+
+.bunny2 {
+    top: 920px;
+    right: 530px;
+    width: 427px;
+    height: 421px;
+    background: url(../images/sub1/bunny_about_bg.png)no-repeat center top;
+    animation: updown 1s linear infinite alternate;
+    animation-delay: 0.3s;
+}
+
+.b_a {
+    top: -50px;
+    right: 50px;
+}
+
+.bunny3 {
+    width: 364px;
+    height: 359px;
+    background: url(../images/sub1/bunny_tmi_bg.png) no-repeat center top;
+    top: 1300px;
+    left: 70px;
+    text-align: center;
+    padding-top: 70px;
+    animation: updown2 1.3s linear infinite alternate;
+}
+
+
+.bunny3 p {
+    font-family: 'KOTRA HOPE';
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #c68fb7;
+    padding-bottom: 10px;
+}
+
+/*ch3*/
+.g_ani7 {
+    animation: stack100 2s 1;
+    background: #d3d2d5;
+}
+
+.g_ani8 {
+    animation: stack75 2s 1;
+    background: #d3d2d5;
+}
+
+.g_ani9 {
+    animation: stack44 2s 1;
+    background: #d3d2d5;
+}
+
+.night_graph {
+    display: flex;
+    position: absolute;
+    top: 1950px;
+    left: 0;
+}
+
+.night_con li {
+    background: url(../images/sub1/night_star.png)no-repeat left top;
+    color: #9a9898;
+}
+
+.nightbear {
+    position: absolute;
+    top: 1500px;
+    left: 100;
+    animation: rotate 2.7s linear infinite alternate;
+}
+
+.night1,
+.night2,
+.night3 {
+    position: relative;
+    position: absolute;
+
+}
+
+.night1 {
+    width: 296px;
+    height: 300px;
+    top: 1400px;
+    left: 400px;
+    background: url(../images/sub1/nightbear_bg.png)no-repeat center top;
+    text-align: center;
+    animation: updown2 1.7s linear infinite alternate;
+}
+
+.night1 p {
+    padding-left: 10px;
+    padding-top: 90px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'KOTRA HOPE';
+    letter-spacing: 1px;
+    color: #9a9898;
+}
+
+.n_n {
+    top: -70px;
+    right: 0;
+}
+
+.night2 {
+    top: 1300px;
+    right: 50px;
+    width: 491px;
+    height: 485px;
+    background: url(../images/sub1/night_about_bg.png)no-repeat center top;
+    animation: updown 1s linear infinite alternate;
+    animation-delay: 0.3s;
+}
+
+.n_a {
+    top: -50px;
+    right: 50px;
+}
+
+.night3 {
+    width: 397px;
+    height: 392px;
+    background: url(../images/sub1/night_tmi_bg.png) no-repeat center top;
+    top: 1900px;
+    right: 300px;
+    text-align: center;
+    padding-top: 70px;
+    animation: updown2 1.3s linear infinite alternate;
+}
+
+
+.night3 p {
+    font-family: 'KOTRA HOPE';
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #9a9898;
+    padding-bottom: 10px;
+}
+
+.n_t {
+    top: -80px;
+    left: 80px;
+}
+
+/*ch4*/
+
+.sweeties {
+    position: absolute;
+    top: 2000px;
+    right: 0;
+    animation: rotate 3.2s linear infinite alternate;
+}
+
+.sweet1,
+.sweet2 {
+    position: relative;
+    position: absolute;
+
+}
+
+.sweet1 {
+    width: 309px;
+    height: 306px;
+    top: 1900px;
+    left: 50px;
+    background: url(../images/sub1/sweeties_bg.png)no-repeat center top;
+    text-align: center;
+    animation: updown2 1.7s linear infinite alternate;
+}
+
+.sweet1 p {
+    padding-left: 10px;
+    padding-top: 110px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'KOTRA HOPE';
+    letter-spacing: 1px;
+    color: #9e8969;
+}
+
+.s_t {
+    top: -70px;
+    right: 0;
+}
+
+.sweet2 {
+    top: 2000px;
+    right: 500px;
+    width: 290px;
+    height: 287px;
+    background: url(../images/sub1/says_bg.png)no-repeat center top;
+    animation: updown 1s linear infinite alternate;
+    animation-delay: 0.3s;
+}
+
+.sweet2 p {
+    color: #4c879f;
+    padding-left: 40px;
+    padding-top: 75px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'KOTRA HOPE';
+    letter-spacing: 1px;
+}
+
+.s_s {
+    top: -70px;
+    right: 10px;
+}
+
+/*wrap3*/
+#wrap3 {
+    position: relative;
+}
+
+.wrap_inner {
+    background: url(../images/sub1/brand_bg.png)no-repeat center top;
+    width: 100%;
+    height: 1170px;
+    position: absolute;
+    top: -450px;
+    left: center;
+    text-align: center;
+}
+
+#wrap3 img {
+    padding-top: 250px;
+    cursor: url(../images/cursor2.gif), auto;
+}
+
+/*footer*/
+.footer_position {
+    position: relative;
+}
+
+#footer {
+    background: url(../images/footer_bg.png);
+    position: absolute;
+    top: 600px;
+    left: 0;
+    width: 100%;
+    height: 405px;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 100px auto;
+}
+
+.fi_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sns_icon {
+    display: flex;
+}
+
+.sns_icon>li {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.fi_2 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: #ab98c8;
+    font-size: 14px;
+}
+
+.fi_2>ul {
+    display: flex;
+}
+
+.fi_2>ul>li {
+    padding-left: 20px;
+}
+
+.top_btn {
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+}

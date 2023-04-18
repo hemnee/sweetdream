@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ganpan';
+    src: url('KCC-Ganpan.eot');
+    src: url('KCC-Ganpan.eot?#iefix') format('embedded-opentype'),
+        url('KCC-Ganpan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
